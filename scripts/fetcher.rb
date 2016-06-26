@@ -30,7 +30,8 @@ loop do
 
       images.each_with_index { |image, index|
         alphabet = ('a'..'z').to_a[index]
-        filename = "#{id}#{alphabet}"
+        basename = "#{id}#{alphabet}"
+        filepath = "data/#{basename}.yml"
 
         image_url = image.attributes['src'].value
         image_alt = image.attributes['alt']&.value
@@ -45,9 +46,9 @@ loop do
           'published_at' => published_at
         }
 
-        puts data.merge('filename' => filename, 'processed_at' => Time.now)
+        puts data.merge('filepath' => filepath, 'processed_at' => Time.now)
 
-        File.write("data/#{filename}.yml", YAML.dump(data))
+        File.write(filepath, YAML.dump(data))
       }
     }
 
