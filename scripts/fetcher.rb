@@ -31,6 +31,8 @@ loop do
         basename = "#{id}#{alphabet}"
         filepath = "data/#{basename}.yml"
 
+        exit if File.exist?(filepath)
+
         image_url = image.attributes['src'].value
         image_alt = image.attributes['alt']&.value
 
