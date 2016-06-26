@@ -5,8 +5,6 @@ Bundler.require
 
 url = 'http://www.irasutoya.com/feeds/posts/default'
 count = 1
-# url = 'https://www.blogger.com/feeds/8749391503645026985/posts/default?start-index=1501&max-results=25'
-# count = 61
 
 loop do
   puts [nil, '=' * 50, url, "page = #{count}", '=' * 50, nil, nil].join("\n")
