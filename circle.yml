@@ -16,13 +16,4 @@ deployment:
     branch:
       'master'
     commands:
-      - rm -rf .git
-      - cd dist
-      - rm -f .gitkeep
-      - git config --global user.name "CircleCI"
-      - git config --global user.email "circle-ci@june29.jp"
-      - git init
-      - git add .
-      - git commit -m "Deploy by CircleCI"
-      - git remote add origin git@github.com:june29/irasutoya-data.git
-      - git push --force --quiet origin master:gh-pages
+      - deploy-to-gh-pages.sh dist
