@@ -24,4 +24,5 @@ deployment:
       - git init
       - git add .
       - git commit -m "Deploy by CircleCI"
+      - git remote add origin git@github.com:june29/irasutoya-data.git
       - git push --force --quiet origin master:gh-pages
