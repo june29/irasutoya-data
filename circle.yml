@@ -14,7 +14,7 @@ test:
 deployment:
   publish:
     branch:
-      'gh-pages'
+      'master'
     commands:
       - rm -rf .git
       - cd dist
@@ -24,4 +24,4 @@ deployment:
       - git init
       - git add .
       - git commit -m "Deploy by CircleCI"
-      - git push --force --quiet origin gh-pages
+      - git push --force --quiet origin master:gh-pages
