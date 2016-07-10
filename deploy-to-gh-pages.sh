@@ -25,7 +25,7 @@ git init
 cp "../${dist}/irasutoya.json" .
 
 git add .
-git commit -m "Deploy by CircleCI"
+git commit -m "Deploy by CircleCI [ci skip]"
 git remote add origin "$remote"
 git push --force --quiet origin master:gh-pages > /dev/null 2>&1
 
