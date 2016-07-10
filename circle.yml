@@ -10,10 +10,10 @@ machine:
       '2.3.0'
 test:
   override:
-    - bundle exec ruby scripts/aggregator.rb
+    - bundle exec ruby ./scripts/aggregator.rb
 deployment:
   publish:
     branch:
       'master'
     commands:
-      - deploy-to-gh-pages.sh dist
+      - ./deploy-to-gh-pages.sh dist
