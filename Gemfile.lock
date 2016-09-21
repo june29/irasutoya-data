@@ -8,7 +8,7 @@ GEM
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     pkg-config (1.1.7)
-    pry (0.10.3)
+    pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
@@ -22,4 +22,4 @@ DEPENDENCIES
   pry
 
 BUNDLED WITH
-   1.12.2
+   1.13.1
