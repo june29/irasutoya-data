@@ -1,3 +1,4 @@
 .bundle
 .ruby-version
 irasutoya.json
+/vendor/bundle
