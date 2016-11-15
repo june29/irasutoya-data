@@ -4,10 +4,8 @@ GEM
     coderay (1.1.1)
     method_source (0.8.2)
     mini_portile2 (2.1.0)
-    nokogiri (1.6.8)
+    nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
-    pkg-config (1.1.7)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -22,4 +20,4 @@ DEPENDENCIES
   pry
 
 BUNDLED WITH
-   1.13.1
+   1.13.6
